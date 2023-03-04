@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans:wght@100&family=Raleway:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+header {
+    background-color: bisque;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+}
+
+nav {
+    /* border: 5px dotted black; */
+    /* width: min-content; */
+    width: inherit;
+    height: inherit;
+    /* наследует высоту родителя (head) */
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+}
+
+nav>a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+nav > a:hover {
+    color: rgb(127, 150, 255);
+}
+
+main {
+    margin-top: 50px;
+}
+
+.About_us {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.About_us img {
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    object-fit: contain;
+    object-position: top;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.game > * {
+    text-align: center;
+}
+
+.game input, .game button {
+    border: none;
+    margin: 5px;
+    min-height: 30px;
+}
+.game button {
+    width: max-content;
+    background-color: aquamarine;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+.game input {
+    background-color: rgb(205, 211, 214);
+    border-radius: 5px;
+    outline: none;
+}
+
+.About_us-diskription {
+    display: flex;
+    flex-direction: column;
+}
+
+.About_us-diskription * {
+    padding: 5px;
+}
+
+.chooseEl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choosed_block-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+.choosed_block-container > div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+.choosed_element {
+    border: 3px solid black;
+}
+
+.post_block {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.post_block > h2 {
+    text-align: center;
+}
+
+.post_block-contener > * {
+margin: 5px;
+padding: 10px;
+border-radius: 10px;
+background-color: rgb(209, 223, 218);
+
+}
